@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../static/img/i.ico">
+    <link rel="bookmark" href="../static/img/i.ico">
+    {% block title %}
+    <title>The One Child</title>
+    {% endblock %}
+    <link rel="stylesheet" href="../static/css/TheOneChild.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="a">
+            <div class="a-one">
+                <a href="">Child Y</a>
+            </div>
+            <div class="a-two">
+                <a href="">首页</a>
+                <a href="">发现</a>
+                <a href="">话题</a>
+            </div>
+            <div class="a-three">
+                <form action="">
+                    <input type="text" src="" placeholder="复仇者联盟 4 定档">
+                    <input type="button">
+                </form>
+            </div>
+            <div class='a-four'>
+                <button type="submit">提问</button>
+            </div>
+            <div class="a-five">
+                <img src="../static/img/b.png" alt="">
+                <img src="../static/img/c.png" alt="">
+                <div>
+                    <button onclick="show(event)">
+                        <img name="false" src="../static/img/1.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+         <!--下拉菜单 -->
+        <ul  class="ul">
+            <li><a href="{% url 'info' %}"><img src="../static/img/user.png" alt=""><span>个人资料</span></a></li>
+            <li><a href="{% url 'sign_out' %}"><img src="../static/img/out.png" alt=""><span>退出</span></a></li>
+        </ul>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/TheOneChild.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    background-color: #B2DFEE;
+}
+#home{
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/home.png');
+}
+.one{
+    height: 100%;
+}
+.two{
+    height: calc((100% - 70px));
+    width: 432px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+.title-one{
+    margin-top: 30px;
+    font-size: 60px;
+    color: #0084ff;
+}
+.title-two{
+    margin-top: 10px;
+    font-size: 23px;
+    color: #0084ff;
+}
+.con-form{
+    margin-top: 25px; 
+}
+form input{
+    height: 48px;
+    width: 100%;
+    margin-bottom: 6px;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+/* form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: red;
+} */
+form div{
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 1px solid #ebebeb;
+} 
+form button{
+    margin-top: 30px;
+    width: 80%;
+    height: 38px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.con-text{
+    display: block;
+    color: #8590a6;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.con-text a{
+    color: #8590a6;
+    text-decoration:none;
+}
+.con-text a:hover{
+    color: #737373;
+}
+.change::-webkit-input-placeholder{
+    color: red;
+}
+.con-reg{
+    height: 58px;
+    line-height: 58px;
+    font-size: 16px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ebebeb;
+}
+.con-reg span:nth-of-type(2){
+    color: #1874CD;
+    cursor: pointer;
+}
+.con-reg a{
+    color: #1874CD;
+    text-decoration:none;
+
+}
+.one-child{
+    margin-top: 30px;
+    width: 100%;
+    height: 42px;
+    background-color: #8590a6;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.three{
+    text-align: center;
+}
+.three > div >span{
+    color: #fff;
+    font-size: 13px;
+}
+.three > div > a{
+    font-size: 13px;
+    color: #fff;
+    text-decoration:none;
+}
+.three > div > a:hover{
+   border-bottom: 1px solid white;
+}

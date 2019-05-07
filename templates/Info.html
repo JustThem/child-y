@@ -1,0 +1,69 @@
+{% extends 'nav.html' %}
+
+    {% block title %}
+        <title>The One Child - Info</title>
+        <link rel="stylesheet" href="../static/css/info.css">
+    {% endblock %}
+    {% block content %}
+    <div class="c">
+        <div class="con">
+            <!-- <div class="img">
+                <input type="file" name="" id="fileImg">
+                <div id="img-box">
+                </div>
+            </div>
+            <div class="data">
+                
+                </canvas>
+            </div> -->
+            <!--  -->
+            <div class="image">
+                <input type="button" value="" onclick="javascript:$('input[name=\'file\']').click();" />
+                <span class="span-img"></span>
+                <span class="span">修改我的头像</span>
+                <input type="file" name="file" style="display: none;" onchange="change(event)" />
+            </div>
+            <!--   -->
+            <div class="info">
+                <h2>Child.Y</h2>
+                <div class="nickname" hidden>
+                    <h4>用户名</h4><input type="text" name="name">
+                </div>
+                <span class="bus" onclick="iClick(event)">编辑资料</span>
+                <div class="info-con">
+                    <div>
+                        <!--  -->
+                        <h4>性别</h4><span class="span1">xx</span>
+                        <div class="sex" hidden>
+                            <input name="sex" id="men" type="radio" checked>男
+                            <input name="sex" id="women" type="radio">女
+                        </div>
+                    </div>
+                    <div>
+                        <!--  -->
+                        <h4>一句话介绍</h4><span class="span1">一句话介绍</span>
+                        <input type="text" class="input" name="sig" hidden>
+                    </div>
+                    <div>
+                        <h4>居住地</h4><span class="span1">填写居住地</span>
+                        <input type="text" class="input" name="add" hidden>
+                    </div>
+                    <div>
+                        <h4>个人说明</h4><span class="span1">....</span>
+                        <input type="text" class="input" name="pst" hidden>
+                    </div>
+                    <div>
+                        <h4>手机</h4><span class="span1">15514812345</span>
+                        <input type="text" class="input" name="phone" hidden>
+                    </div>
+                    <div>
+                        <h4>邮箱</h4><span class="span1">childY@childy.com</span>
+                        <input type="text" class="input" name="email" hidden>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/info.js"></script>
+{% endblock %}
