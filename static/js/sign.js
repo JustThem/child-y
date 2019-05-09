@@ -1,30 +1,29 @@
 function rBlur(e) {
     e.target.setAttribute('class', 'change');
-    if (!e.target.value){
-        if (e.target.name == 'username'){
-            if (e.target.placeholder == '注册'){
+    if (!e.target.value) {
+        if (e.target.name == 'username') {
+            if (e.target.placeholder == '注册') {
                 e.target.placeholder = '请输入注册账号'
-            }else{
+            } else {
                 e.target.placeholder = '请输入账号'
             }
-        }else{
+        } else {
             e.target.placeholder = '请输入密码'
-        } 
+        }
     }
 }
 function rFocus(e) {
     e.target.setAttribute('class', '');
-        if (e.target.name == 'username'){
-            console.log(e.target.placeholder);
-            if(e.target.placeholder == '注册' | e.target.placeholder == '请输入注册账号'){
-                e.target.placeholder = '注册'
-            }else{
-                e.target.placeholder = '账号';
-            }
-            
-        }else{
-            e.target.placeholder = '密码';
+    if (e.target.name == 'username') {
+        if (e.target.placeholder == '注册' | e.target.placeholder == '请输入注册账号') {
+            e.target.placeholder = '注册'
+        } else {
+            e.target.placeholder = '账号';
         }
+
+    } else {
+        e.target.placeholder = '密码';
+    }
 }
 function rClick(e) {
     let a = document.getElementsByClassName('title-two')[0];
@@ -37,7 +36,7 @@ function rClick(e) {
     let a1 = document.createElement('a');
     let a2 = document.createElement('a');
     let con = document.getElementsByClassName('con-reg')[0];
-    if (e.target.innerHTML == '注册'){
+    if (e.target.innerHTML == '注册') {
         a.innerHTML = '注册Child，发现更多可信赖的解答';
         b[0].placeholder = '注册';
         c[0].innerHTML = '注册';
@@ -46,11 +45,11 @@ function rClick(e) {
         input.type = 'password';
         input.placeholder = '密码';
         input.name = 'pwd';
-        input.onblur = function(){
+        input.onblur = function () {
             this.setAttribute('class', 'change');
             this.placeholder = '请输入密码'
         };
-        input.onfocus = function(){
+        input.onfocus = function () {
             this.setAttribute('class', '');
             this.placeholder = '密码';
         };
@@ -73,7 +72,7 @@ function rClick(e) {
         history.pushState('', '', '/sign_up/');
 
 
-    }else{  
+    } else {
         b[0].setAttribute('class', '');
         b[1].setAttribute('class', '');
         a.innerHTML = '登录Child，发现更多可信赖的解答';
@@ -83,7 +82,7 @@ function rClick(e) {
         form.removeChild(form.children[2]);
         form.removeChild(form.children[5]);
         c[0].style.marginBottom = '40px';
-        con.children[0].innerText  = '没有账号？';
+        con.children[0].innerText = '没有账号？';
         history.pushState('', '', '/sign_in/');
     }
 }

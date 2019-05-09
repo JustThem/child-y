@@ -16,13 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from y1.views import *
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index),
+    path('index/', index, name='index'),
     path('get_data/', get_data),
     path('sign_in/', sign_in, name='sign_in'),
     path('sign_up/', sign_up, name='sign_up'),
     path('sign_out/', sign_out, name='sign_out'),
-    path('info/', info, name='info')
-]
+    path('info/', info, name='info'),
+    path('like_up/', like_up),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

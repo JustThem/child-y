@@ -61,7 +61,7 @@
 .image{
     width: 150px;
     height: 150px;
-    background-image: url('./img/1.png');
+    /*background-image: url('./img/1.png');*/
     background-size: 100% 100%;
     border-radius: 5px;
     margin-left: 20px;
@@ -124,6 +124,26 @@ h2{
     opacity: 0.8;
     font-size: 15px;
     cursor: pointer;
+}
+.bus-span{
+    display: none;
+    position: absolute;
+    right: 100px;
+    top: 24px;
+    color: #000;
+    opacity: 0.8;
+    font-size: 15px;
+    cursor: pointer;
+}
+.bus-button{
+    display: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background:none;
+    position: absolute;
+    right: 25px;
+    top: 25px;
 }
 .info-con > div{
     height: 120px;

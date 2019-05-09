@@ -1,13 +1,13 @@
 {% extends 'nav.html' %}
 
-    {% block title %}
-        <title>The One Child - Info</title>
-        <link rel="stylesheet" href="../static/css/info.css">
-    {% endblock %}
-    {% block content %}
-    <div class="c">
-        <div class="con">
-            <!-- <div class="img">
+{% block title %}
+<title>The One Child - Info</title>
+<link rel="stylesheet" href="../static/css/info.css">
+{% endblock %}
+{% block content %}
+<div class="c">
+    <div class="con">
+        <!-- <div class="img">
                 <input type="file" name="" id="fileImg">
                 <div id="img-box">
                 </div>
@@ -16,54 +16,77 @@
                 
                 </canvas>
             </div> -->
-            <!--  -->
-            <div class="image">
-                <input type="button" value="" onclick="javascript:$('input[name=\'file\']').click();" />
-                <span class="span-img"></span>
-                <span class="span">修改我的头像</span>
-                <input type="file" name="file" style="display: none;" onchange="change(event)" />
-            </div>
-            <!--   -->
-            <div class="info">
-                <h2>Child.Y</h2>
-                <div class="nickname" hidden>
-                    <h4>用户名</h4><input type="text" name="name">
+        <form action="{% url 'info' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            {% if item.image %}
+                <div class="image" style="background-image: url({{ item.image.url}})">
+            {% else %}
+                <div class="image" style="background-image: url('../static/css/img/1.png')">
+            {% endif %}
+                    <div class="image-hidden" style="display: none;">
+                        <input type="button" value="" onclick="javascript:$('input[name=\'file\']').click();" />
+                        <span class="span-img"></span>
+                        <span class="span">修改我的头像</span>
+                        <input type="file" name="file" style="display: none;" onchange="change(event)" />
+                    </div>
                 </div>
-                <span class="bus" onclick="iClick(event)">编辑资料</span>
-                <div class="info-con">
-                    <div>
-                        <!--  -->
-                        <h4>性别</h4><span class="span1">xx</span>
-                        <div class="sex" hidden>
-                            <input name="sex" id="men" type="radio" checked>男
-                            <input name="sex" id="women" type="radio">女
+                <div class="info">
+                    <h2>{{ item.nickname | default:"ChildY" }}</h2>
+                    <div class="nickname" hidden>
+                        <h4>用户名</h4><input type="text" name="name" value="{{ item.nickname }}"
+                            placeholder="{{ item.nickname }}">
+                    </div>
+                    <span class="bus" onclick="iClick(event)">编辑资料</span>
+                    <span class="bus-span" onclick="iClick(event)">关闭</span>
+                    <button type="submit" class="bus-button">保存</button>
+                    <div class="info-con">
+                        <div>
+                            <!--  -->
+                            <h4>性别</h4><span class="span1">{{ item.sex | default:"xx" }}</span>
+                            <div class="sex" hidden>
+                                {% if item.sex == '男' %}
+                                <input name="sex" value="男" type="radio" checked>男
+                                <input name="sex" value="女" type="radio">女
+                                {% else %}
+                                <input name="sex" value="男" type="radio">男
+                                <input name="sex" value="女" type="radio" checked>女
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div>
+                            <!--  -->
+                            <h4>一句话介绍</h4><span class="span1">{{ item.sig | default:"一句话介绍" }}</span>
+                            <input type="text" class="input" value="{{ item.sig }}" name="sig" hidden
+                                placeholder="{{ item.sig | default:"一句话介绍" }}">
+                        </div>
+                        <div>
+                            <h4>居住地</h4><span class="span1">{{ item.add | default:"居住地" }}</span>
+                            <input type="text" class="input" name="add" value="{{ item.add }}" hidden
+                                placeholder="{{ item.add | default:"居住地" }}">
+                        </div>
+                        <div>
+                            <h4>个人说明</h4><span class="span1">{{ item.pst | default:"......" }}</span>
+                            <input type="text" class="input" name="pst" value="{{ item.pst }}" hidden
+                                placeholder="{{ item.pst | default:"......" }}">
+                        </div>
+                        <div>
+                            <h4>手机</h4><span class="span1">{{ item.phone | default:"15514812345"}}</span>
+                            <input pattern="\d{11}" class="input" oninvalid="setCustomValidity('请输入正确的手机号');"
+                                oninput="setCustomValidity('');" name="phone" value="{{ item.phone }}" hidden
+                                placeholder="{{ item.phone | default:'15514812345'}}">
+                        </div>
+                        <div>
+                            <h4>邮箱</h4><span class="span1">{{ item.email | default:"child@child.com"}}</span>
+                            <input type="email" class="input" oninvalid="setCustomValidity('请输入正确的邮箱格式');"
+                                oninput="setCustomValidity('');" name="email" value="{{ item.email }}" hidden
+                                placeholder="{{ item.email | default:"child@child.com" }}">
                         </div>
                     </div>
-                    <div>
-                        <!--  -->
-                        <h4>一句话介绍</h4><span class="span1">一句话介绍</span>
-                        <input type="text" class="input" name="sig" hidden>
-                    </div>
-                    <div>
-                        <h4>居住地</h4><span class="span1">填写居住地</span>
-                        <input type="text" class="input" name="add" hidden>
-                    </div>
-                    <div>
-                        <h4>个人说明</h4><span class="span1">....</span>
-                        <input type="text" class="input" name="pst" hidden>
-                    </div>
-                    <div>
-                        <h4>手机</h4><span class="span1">15514812345</span>
-                        <input type="text" class="input" name="phone" hidden>
-                    </div>
-                    <div>
-                        <h4>邮箱</h4><span class="span1">childY@childy.com</span>
-                        <input type="text" class="input" name="email" hidden>
-                    </div>
                 </div>
-            </div>
-        </div>
+        </form>
     </div>
+</div>
 
-    <script src="../static/js/info.js"></script>
+<script src="../static/js/info.js"></script>
 {% endblock %}

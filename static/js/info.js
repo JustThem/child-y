@@ -23,62 +23,86 @@
 //                     }
 //                 });
 //             }
-            
+
 //         }
 //     }
 // }
-function change(e){
-    let fileList = e.target.files
+function change(e) {
+    let fileList = e.target.files;
     for (let i = 0; i < fileList.length; i++) {
         let reader = new FileReader();
-        reader.readAsDataURL(fileList[i])
-        reader.onload = function(){
-            document.getElementsByClassName('image')[0].style.backgroundImage = 'url("' + this.result + '")'
-            document.getElementsByClassName('img')[0].src = this.result
+        reader.readAsDataURL(fileList[i]);
+        reader.onload = function () {
+            document.getElementsByClassName('image')[0].style.backgroundImage = 'url("' + this.result + '")';
+            // document.getElementsByClassName('img')[0].src = this.result;
+            // $.ajax({
+            //     url:'/image/',
+            //     data:JSON.stringify({
+            //         image:this.result
+            //     }),
+            //     contentType:'application/json',
+            //     type: 'GET',
+            //     traditional: true,
+            //     success:function (res) {
+            //         console.log(res)
+            //     },
+            //     error:function (err) {
+            //         console.log(err)
+            //     }
+            // })
         }
     }
 }
-                                                                                                     
-function iClick(e){
-    console.log(123)
-    var h2 = document.getElementsByTagName('h2')[0]
-    var name = document.getElementsByClassName('nickname')[0]
-    var sex = document.getElementsByClassName('sex')[0]
-    var span = document.getElementsByClassName('span1')
-    var input = document.getElementsByClassName('input')
-    if (e.target.innerText == '编辑资料'){
-        e.target.innerText = '保存'
-        h2.style.display = 'none'
-        name.removeAttribute('hidden')
-        span[0].style.display = 'none'
-        sex.style.display = 'inline-block'
-        span[1].style.display = 'none'
-        input[0].removeAttribute('hidden')
-        span[2].style.display = 'none'
-        input[1].removeAttribute('hidden')
-        span[3].style.display = 'none'
-        input[2].removeAttribute('hidden')
-        span[4].style.display = 'none'
-        input[3].removeAttribute('hidden')
-        span[5].style.display = 'none'
+
+function iClick(e) {
+    var h2 = document.getElementsByTagName('h2')[0];
+    var name = document.getElementsByClassName('nickname')[0];
+    var sex = document.getElementsByClassName('sex')[0];
+    var span = document.getElementsByClassName('span1');
+    var input = document.getElementsByClassName('input');
+    var button = document.getElementsByClassName('bus-button')[0];
+    var busSpan = document.getElementsByClassName('bus-span')[0];
+    var bus = document.getElementsByClassName('bus')[0];
+    var img = document.getElementsByClassName('image-hidden')[0];
+    if (e.target.innerText == '编辑资料') {
+        img.style.display = 'inline-block';
+        button.style.display = 'inline-block';
+        bus.style.display = 'none';
+        busSpan.style.display = 'inline-block';
+        h2.style.display = 'none';
+        name.removeAttribute('hidden');
+        span[0].style.display = 'none';
+        sex.style.display = 'inline-block';
+        span[1].style.display = 'none';
+        input[0].removeAttribute('hidden');
+        span[2].style.display = 'none';
+        input[1].removeAttribute('hidden');
+        span[3].style.display = 'none';
+        input[2].removeAttribute('hidden');
+        span[4].style.display = 'none';
+        input[3].removeAttribute('hidden');
+        span[5].style.display = 'none';
         input[4].removeAttribute('hidden')
-    }else{
-        e.target.innerText = '编辑资料'
-        h2.style.display = 'inline-block';
-        name.setAttribute('hidden', 'true')
-        span[0].style.display = 'inline-block'
-        sex.style.display = 'none'
-        span[1].style.display = 'inline-block'
-        input[0].setAttribute('hidden', 'true')
-        span[2].style.display = 'inline-block'
-        input[1].setAttribute('hidden', 'true')
-        span[3].style.display = 'inline-block'
-        input[2].setAttribute('hidden', 'true')
-        span[4].style.display = 'inline-block'
-        input[3].setAttribute('hidden', 'true')
-        span[5].style.display = 'inline-block'
-        input[4].setAttribute('hidden', 'true')
+    } else {
+        location.href = '/info/'
     }
+
+    // else{
+    //     h2.style.display = 'inline-block';
+    //     name.setAttribute('hidden', 'true');
+    //     span[0].style.display = 'inline-block';
+    //     sex.style.display = 'none';
+    //     span[1].style.display = 'inline-block';
+    //     input[0].setAttribute('hidden', 'true');
+    //     span[2].style.display = 'inline-block';
+    //     input[1].setAttribute('hidden', 'true');
+    //     span[3].style.display = 'inline-block';
+    //     input[2].setAttribute('hidden', 'true');
+    //     span[4].style.display = 'inline-block';
+    //     input[3].setAttribute('hidden', 'true');
+    //     span[5].style.display = 'inline-block';
+    //     input[4].setAttribute('hidden', 'true')
+    // }
 }
 
 
@@ -96,5 +120,5 @@ function iClick(e){
 // function rHover(e){
 //     // e.target.children[0].remove()
 //     e.target.children[1].style.display = 'none';
-    
+
 // }

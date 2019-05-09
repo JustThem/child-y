@@ -11,7 +11,7 @@
     {% block title %}
     <title>The One Child</title>
     {% endblock %}
-    <link rel="stylesheet" href="../static/css/TheOneChild.css">
+    <link rel="stylesheet" href="../static/css/nav.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <a href="">Child Y</a>
             </div>
             <div class="a-two">
-                <a href="">首页</a>
+                <a href="{% url 'index' %}">首页</a>
                 <a href="">发现</a>
                 <a href="">话题</a>
             </div>
@@ -41,14 +41,18 @@
                 <img src="../static/img/c.png" alt="">
                 <div>
                     <button onclick="show(event)">
-                        <img name="false" src="../static/img/1.png" alt="">
+                        {% if item.image %}
+                            <img name="false" src="{{ item.image.url}}" alt="">
+                        {% else %}
+                            <img name="false" src="../static/css/img/1.png" alt="">
+                        {% endif %}
                     </button>
                 </div>
             </div>
         </div>
 
-         <!--下拉菜单 -->
-        <ul  class="ul">
+        <!--下拉菜单 -->
+        <ul class="ul">
             <li><a href="{% url 'info' %}"><img src="../static/img/user.png" alt=""><span>个人资料</span></a></li>
             <li><a href="{% url 'sign_out' %}"><img src="../static/img/out.png" alt=""><span>退出</span></a></li>
         </ul>
@@ -58,7 +62,7 @@
 
     {% endblock %}
     <script src="../static/js/jquery.js"></script>
-    <script src="../static/js/TheOneChild.js"></script>
+    <script src="../static/js/nav.js"></script>
 
 </body>
 

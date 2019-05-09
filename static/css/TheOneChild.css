@@ -1,224 +1,7 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    background-color: #f6f6f6;
-    width: 100%;
-}
-
-body {
-    width: 100%;
-    margin: 0;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    z-index: 99999;
-    border-top: 1px solid #e6e6e6;
-    height: 60px;
-    background-color: white;
-    line-height: 60px;
-    width: 100%;
-    box-shadow:0px 0px 10px #e6e6e6;
-    
-}
-
-.a{
-    width: 1000px;
-    /* background-color: blanchedalmond; */
-    margin: 0 auto;
-    height: 50px;
-    display: flex;
-}
-
-.a-one{
-    width: 200px;
-    margin-right: 10px;
-    /* background-color: red; */
-}
-.a-one a{
-    text-decoration: none;
-    margin-left: 0;
-    font-size: 30px;
-    font-family:微软雅黑;
-    color: #0080ff;
-
-}
-
-
-.a-two{
-    /* background-color: rebeccapurple; */
-    width: 320px;
-    height: 50px;
-    text-align: center;
-}
-.a-two > a{
-    cursor: pointer;
-    font-size: 14px;
-    margin-left: 13px; 
-    margin-right: 13px;
-    text-decoration: none;
-    color: #000;
-}
-.a-two > a:nth-of-type(1){
-    margin-left: 0;
-}
-
-
-
-
-.a-three{
-    display: flex;
-    width: 660px;
-    height: 60px;
-    /* background-color: black; */
-    position: relative;
-}
-.a-three input{
-    position: absolute;
-    height: 35px;
-    top: calc((100% - 35px) / 2);
-    outline: none;  
-}
-
-.a-three input:nth-of-type(1){
-    width: 330px;
-    border: none;
-    background-color: #f0f0f0;
-    padding: 15px; 
-    border-radius: 3px;
-}
-.a-three input:nth-of-type(2){
-    position: absolute;
-    top: calc((100% - 30px) / 2);
-    height: 30px;
-    left: 285px;
-    width: 35px;
-    border: none;
-    background-image: url(img/a.png);
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-color: #f0f0f0;
-    background-position: center;
-    cursor: pointer;
-    
-}
-
-
-
-.a-four{
-    /* background-color: red; */
-    width: 120px;
-    position: relative;
-    height: 60px;
-}
-.a-four button{
-    position: absolute;
-    top: calc((100% - 35px) / 2);
-    left: calc((100% - 55px) / 2);
-    height: 35px;
-    width: 55px;
-    background-color: #0080ff;
-    color: white;
-    border-radius: 7px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-
-.a-five{
-    height: 60px;
-    width: 600px;
-    /* background-color: burlywood; */
-    position: relative;
-}
-.a-five > img{
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: calc((100% - 22px) / 2);
-    cursor: pointer;
-}
-.a-five > img:nth-of-type(2){
-    right: 90px;
-}
-.a-five > img:nth-of-type(1){
-    right: 150px;
-
-}
-.a-five div{
-    position: absolute;
-    right: 5px;
-    top: calc((100% - 40px) / 2);
-    /*height: 40px;*/
-    /*width: 40px;*/
-    cursor: pointer;
-    /*background-image: url(img/icons.jpg);*/
-    /*background-size: 700% 700%;*/
-    /*background-position: 0 -40px;*/
-    /*text-align: end;*/
-}
-.a-five div button{
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
-
-}
-.a-five div img{
-    width: 30px;
-    height: 30px;
-}
-
-.ul{
-    width: 120px;
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-    background-color:#fff;
-    text-align: start;
-    position: absolute;
-    right: calc((100% - 1000px) / 2 - 60px + 15px);
-    top: 50px;
-    box-shadow:0px 0px 10px #e6e6e6;
-    border-radius: 8px;
-    display: none;
-}
-.ul li{
-    position: relative;
-    height: 45px;
-    line-height: 46px;
-    margin: 8px 0;
-}
-.ul li img{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: calc((100% - 16px) / 2);
-    left: 10px;
-}
-.ul li a{
-    display: block;
-    color: #6c6c6c;
-    font-size: 15px;
-    text-decoration: none;
-
-}
-.ul li a:hover{
-    background-color: #F7F7F7;
-
-}
-.ul li span{
-    margin-left: 40px;
-}
-
 
 /* 右侧 */
 .b{
-    margin-top: 70px;;
+    margin-top: 90px;;
     background-color:#F7F7F7;
     width: 1000px;
     margin-left: calc((100% - 1000px) / 2);
@@ -337,7 +120,7 @@ nav {
 }
 .but button{
     margin-left: 10px;
-    height: 30px;
+    height: 33px;
     width: 120px;
 
 }
@@ -347,7 +130,7 @@ nav {
     line-height: 33px;
 
 }
-.but span button{
+.but1{
     margin-left: 0;
     border: none;
     background-color:#d2e9ff;
@@ -363,17 +146,42 @@ nav {
     
 }
 
-.but span button span{
+.but1 span{
     display: inline-block;
     width: 15px;
     height: 15px;
     background-size: 15px 15px;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-image: url(img/r.png);
     position: absolute;
     left: 5px;
     top: calc((100% - 15px) / 2);
 
+}
+.like-but{
+    background-color: #0084ff;
+    color: white;
+    margin-left: 0;
+    border: none;
+    width: 110px;
+    height: 33px;
+    font-size: 15px;
+    position: relative;
+    border-radius: 5px;
+    font-family: 微软雅黑;
+    outline: none;
+    cursor: pointer;
+}
+.like-but span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+    /*background-repeat: no-repeat;*/
+    background-image: url(img/r1.png);
+    position: absolute;
+    left: 5px;
+    top: calc((100% - 15px) / 2);
 }
 .but > button:nth-of-type(1){
     margin-left: 5px;

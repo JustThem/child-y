@@ -1,100 +1,126 @@
 {% extends 'nav.html' %}
+
+
+{% block title %}
+<link rel="stylesheet" href="../static/css/TheOneChild.css">
+{% endblock %}
 {% block content %}
-    <div class="b">
-        <div class="b-one">
-        <h1>{{ name }}</h1>
-            <!-- 头部区域 -->
-            <div class="head">
-                <div class="head-one">
-                    <a href="#" class="aa" onclick="clickA(this)">推荐</a>
-                    <a href="#" onclick="clickA(this)">关注</a>
-                    <a href="#" onclick="clickA(this)">热榜</a>
-                </div>
+<div class="b">
+    <div class="b-one">
+        <!-- 头部区域 -->
+        <div class="head">
+            <div class="head-one">
+                <a href="#" class="aa" onclick="clickA(this)">推荐</a>
+                <a href="#" onclick="clickA(this)">关注</a>
+                <a href="#" onclick="clickA(this)">热榜</a>
             </div>
+        </div>
 
         <!-- 内容区域 -->
-            <div class="b-content">
-                {% for i in data %}
-                <div class='con-info'>
-                    <a href="#" id="title">{{i.title}}</a>
-                    <div class='data'>
-                        <span id="tInfo">{{i.info | truncatechars_html:98}}</span>
-                        <span id="block" hidden>{{ i.info }}</span>
-                        <button  class='all' onclick='dataInfo(this)'>
-                            <span>阅读全文</span>
-                            <span></span>
-                        </button>
-                    </div>
-                    <div class='but'>
-
-                            <span><button onmouseover="this.style.backgroundColor='#c4e1ff'"  onmouseout="this.style.backgroundColor='#d2e9ff'" onclick="backColor1(event)" value="false"  aria-label='赞同'><span id="one" onclick="backColor11(event)"></span>&nbsp;&nbsp;&nbsp;赞同 1k</button></span>
-                            <button aria-label='反对' onmouseover="this.style.backgroundColor='#c4e1ff'" onmouseout="this.style.backgroundColor='#d2e9ff'" onclick="backColor2(event)" value="false"><span onclick="backColor22(event)"></span></button>
-                            <button aria-label='评论'><span></span><span onmouseover="this.style.color='#4f4f4f'" onmouseout="this.style.color='#8590a6'"> 1482 条评论</span></button>
-                            <div aria-label='分享'  ><button><span></span><span onmouseover="this.style.color='#4f4f4f'" onmouseout="this.style.color='#8590a6'">分享</span></button></div>
-                            <button aria-label='收藏'><span></span><span onmouseover="this.style.color='#4f4f4f'" onmouseout="this.style.color='#8590a6'">收藏</span></button>
-                            <button aria-label='感谢'><span></span><span onmouseover="this.style.color='#4f4f4f'" onmouseout="this.style.color='#8590a6'">感谢</span></button>
-                            <button aria-label='收起' class='span-button' style='display:none' onclick='dataInto(this)'><span>收起</span><span></span></button>
-                    </div>
+        <div class="b-content">
+            {% for i in data %}
+            <div class='con-info'>
+                <a href="#" id="title">{{i.title}}</a>
+                <div class='data'>
+                    <span id="tInfo">{{i.info | truncatechars_html:98}}</span>
+                    <span id="block" hidden>{{ i.info }}</span>
+                    <button class='all' onclick='dataInfo(this)'>
+                        <span>阅读全文</span>
+                        <span></span>
+                    </button>
                 </div>
+                <div class='but'>
+                    <span style="display: none;">{{ i.id }}</span>
+
+                    {% if i.id in pid %}
+                        <span>
+                            <button class="like-but" onclick="backColor1(event)" value="true" aria-label='已赞同'>
+                                <span id="one" onclick="backColor11(event)"></span>&nbsp;&nbsp;&nbsp;已赞同{{ i.like_num }}
+                            </button>
+                        </span>
+                    {% else %}
+                        {% if i.like_num == 0 %}
+                            <span><button class="but1" onmouseover="this.style.backgroundColor='#c4e1ff'" onmouseout="this.style.backgroundColor='#d2e9ff'" onclick="backColor1(event)" value="false" aria-label='赞同'><span id="one" onclick="backColor11(event)"></span>&nbsp;&nbsp;&nbsp;赞同</button></span>
+                        {% else %}
+                            <span><button class="but1" onmouseover="this.style.backgroundColor='#c4e1ff'" onmouseout="this.style.backgroundColor='#d2e9ff'" onclick="backColor1(event)" value="false" aria-label='赞同'><span id="one" onclick="backColor11(event)"></span>&nbsp;&nbsp;&nbsp;赞同{{ i.like_num }}</button></span>
+                        {% endif %}
+                    {% endif %}
+
+                    <button aria-label='反对' onmouseover="this.style.backgroundColor='#c4e1ff'"
+                        onmouseout="this.style.backgroundColor='#d2e9ff'" onclick="backColor2(event)"
+                        value="false"><span onclick="backColor22(event)"></span></button>
+                    <button aria-label='评论'><span></span><span onmouseover="this.style.color='#4f4f4f'"
+                            onmouseout="this.style.color='#8590a6'"> 1482 条评论</span></button>
+                    <div aria-label='分享'><button><span></span><span onmouseover="this.style.color='#4f4f4f'"
+                                onmouseout="this.style.color='#8590a6'">分享</span></button></div>
+                    <button aria-label='收藏'><span></span><span onmouseover="this.style.color='#4f4f4f'"
+                            onmouseout="this.style.color='#8590a6'">收藏</span></button>
+                    <button aria-label='感谢'><span></span><span onmouseover="this.style.color='#4f4f4f'"
+                            onmouseout="this.style.color='#8590a6'">感谢</span></button>
+                    <button aria-label='收起' class='span-button' style='display:none'
+                        onclick='dataInto(this)'><span>收起</span><span></span></button>
+                </div>
+            </div>
             {% endfor %}
-            </div>
-            <!-- 加载更多 -->
-            <div class="more">
-                <span onclick="moreClick()">----加载更多----</span>
-            </div>
         </div>
-
-        <div class="b-two">
-            <div class="b-img">
-                <a href="#" title="写回答"><img src="../static/img/d.png" alt="写回答"><span>写回答</span></a>
-                <a href="#" title="写文章"><img src="../static/img/e.png" alt="写文章"><span>写文章</span></a>
-                <a href="#" title="写想法"><img src="../static/img/f.png" alt="写想法"><span>写想法</span></a>
-            </div>
-            <ul class="b-ul">
-                <li><a href="#" title="Live"><img src="../static/img/g.png" alt=""><span>Live</span></a></li>
-                <li><a href="#" title="书店"><img src="../static/img/h.png" alt=""><span>书店</span></a></li>
-                <li><a href="#" title="圆桌"><img src="../static/img/i.png" alt=""><span>圆桌</span></a></li>
-                <li><a href="#" title="专栏"><img src="../static/img/j.png" alt=""><span>专栏</span></a></li>
-                <li><a href="#" title="付费咨询"><img src="../static/img/k.png" alt=""><span>付费咨询</span></a></li>
-                <li class="li-none"><a href="#"><img src="" alt=""><span></span></a></li>
-            </ul>
-
-            <ul class="bb-li">
-                <li><a href="#"><img src="../static/img/l.png" alt=""><span>我的收藏</span></a></li>
-                <li><a href="#"><img src="../static/img/m.png" alt=""><span>我关注的问题</span></a></li>
-                <li><a href="#"><img src="../static/img/n.png" alt=""><span>我的邀请</span></a></li>
-                <li><a href="#"><img src="../static/img/o.png" alt=""><span>站务中心</span></a></li>
-                <li><a href="#"><img src="../static/img/p.png" alt=""><span>版权服务中心</span></a></li>
-            </ul>
-            <div class="b-span">
-                <a href="#">Is_Y</a>
-                <span>·</span>
-                <a href="#">Child指南</a>
-                <span>·</span>
-                <a href="#">Child协议</a>
-                <span>·</span>
-                <a href="#">Child隐私保护指引</a>
-                <br><br>
-                <a href="#">应用</a>
-                <span>·</span>
-                <a href="#">工作</a>
-                <span>·</span>
-                <a href="#">申请开通Child机构号</a>
-                <br><br>
-                <a href="#">侵权举报</a>
-                <span>·</span>
-                <a href="#">网上有害信息举报专区</a>
-                <br><br>
-                <span>违法和不良信息举报：010-82716601</span>
-                <br><br>
-                <a href="#">儿童色情信息举报专区</a>
-                <br><br>
-                <a href="#">电信与服务业务经营许可证</a>
-                <br><br>
-                <a href="#">网络文化经营许可证</a>
-                <br><br>
-                <a href="#">联系我们 © 2019 Child</a>
-            </div>
+        <!-- 加载更多 -->
+        <div class="more">
+            <span onclick="moreClick()">----加载更多----</span>
         </div>
     </div>
-    {% endblock %}
+
+    <div class="b-two">
+        <div class="b-img">
+            <a href="#" title="写回答"><img src="../static/img/d.png" alt="写回答"><span>写回答</span></a>
+            <a href="#" title="写文章"><img src="../static/img/e.png" alt="写文章"><span>写文章</span></a>
+            <a href="#" title="写想法"><img src="../static/img/f.png" alt="写想法"><span>写想法</span></a>
+        </div>
+        <ul class="b-ul">
+            <li><a href="#" title="Live"><img src="../static/img/g.png" alt=""><span>Live</span></a></li>
+            <li><a href="#" title="书店"><img src="../static/img/h.png" alt=""><span>书店</span></a></li>
+            <li><a href="#" title="圆桌"><img src="../static/img/i.png" alt=""><span>圆桌</span></a></li>
+            <li><a href="#" title="专栏"><img src="../static/img/j.png" alt=""><span>专栏</span></a></li>
+            <li><a href="#" title="付费咨询"><img src="../static/img/k.png" alt=""><span>付费咨询</span></a></li>
+            <li class="li-none"><a href="#"><img src="" alt=""><span></span></a></li>
+        </ul>
+
+        <ul class="bb-li">
+            <li><a href="#"><img src="../static/img/l.png" alt=""><span>我的收藏</span></a></li>
+            <li><a href="#"><img src="../static/img/m.png" alt=""><span>我关注的问题</span></a></li>
+            <li><a href="#"><img src="../static/img/n.png" alt=""><span>我的邀请</span></a></li>
+            <li><a href="#"><img src="../static/img/o.png" alt=""><span>站务中心</span></a></li>
+            <li><a href="#"><img src="../static/img/p.png" alt=""><span>版权服务中心</span></a></li>
+        </ul>
+        <div class="b-span">
+            <a href="#">Is_Y</a>
+            <span>·</span>
+            <a href="#">Child指南</a>
+            <span>·</span>
+            <a href="#">Child协议</a>
+            <span>·</span>
+            <a href="#">Child隐私保护指引</a>
+            <br><br>
+            <a href="#">应用</a>
+            <span>·</span>
+            <a href="#">工作</a>
+            <span>·</span>
+            <a href="#">申请开通Child机构号</a>
+            <br><br>
+            <a href="#">侵权举报</a>
+            <span>·</span>
+            <a href="#">网上有害信息举报专区</a>
+            <br><br>
+            <span>违法和不良信息举报：010-82716601</span>
+            <br><br>
+            <a href="#">儿童色情信息举报专区</a>
+            <br><br>
+            <a href="#">电信与服务业务经营许可证</a>
+            <br><br>
+            <a href="#">网络文化经营许可证</a>
+            <br><br>
+            <a href="#">联系我们 © 2019 Child</a>
+        </div>
+    </div>
+</div>
+<script src="../static/js/TheOneChild.js"></script>
+{% endblock %}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <title>The One Child</title>
     <link rel="stylesheet" href="../static/css/sign_up.css">
 </head>
+
 <body>
     <div id="home">
         <div class="one">
@@ -20,33 +22,37 @@
                     </div>
 
                     <div class="con-form">
-                       <form action=" {% url 'sign_up' %}" method="post">
-                           {% csrf_token %}
-                           <div><input type="text"  required pattern="^[0-9a-zA-Z]{2,15}$" onblur="rBlur(event)" onfocus="rFocus(event)" name="username" placeholder="账号"></div>
-                           <div><input type="password" required pattern="^[0-9a-zA-Z@_.]{6,18}$" onblur="rBlur(event)" onfocus="rFocus(event)" name="password" placeholder="密码"></div>
-                           <div><input type="password" required pattern="^[0-9a-zA-Z@_.]{6,18}$" onblur="rBlur(event)" onfocus="rFocus(event)" name="pwd" placeholder="密码"></div>
-                            <button type="submit" onmouseover="this.style.backgroundColor='#1874CD'"  onmouseout="this.style.backgroundColor='#0084ff'">注册</button>
+                        <form action=" {% url 'sign_up' %}" method="post">
+                            {% csrf_token %}
+                            <div><input type="text" required pattern="^[0-9a-zA-Z]{2,15}$" onblur="rBlur(event)"
+                                    onfocus="rFocus(event)" name="username" placeholder="账号"></div>
+                            <div><input type="password" required pattern="^[0-9a-zA-Z@_.]{6,18}$" onblur="rBlur(event)"
+                                    onfocus="rFocus(event)" name="password" placeholder="密码"></div>
+                            <div><input type="password" required pattern="^[0-9a-zA-Z@_.]{6,18}$" onblur="rBlur(event)"
+                                    onfocus="rFocus(event)" name="pwd" placeholder="密码"></div>
+                            <button type="submit" onmouseover="this.style.backgroundColor='#1874CD'"
+                                onmouseout="this.style.backgroundColor='#0084ff'">注册</button>
                             <br>
                             <span class="con-text">
                                 注册即代表同意
                                 <a href="#">《Child协议》</a>
                                 <a href="#">《隐私保护指引》</a>
                             </span>
-                           {% if messages %}
-                               <script>
-                                   {% for x in messages %}
-                                        alert('{{ x }}');
-                                   {% endfor %}
-                               </script>
-                           {% endif %}
+                            {% if messages %}
+                            <script>
+                                {% for x in messages %}
+                                alert('{{ x }}');
+                                {% endfor %}
+                            </script>
+                            {% endif %}
                         </form>
                         <div class="con-reg">
                             <span>已有账号？</span><span onclick="rClick(event)">登录</span>
                         </div>
                     </div>
-                    
+
                 </div>
-            <button class="one-child">一个小孩&nbsp;&nbsp;Y</button>
+                <button class="one-child">一个小孩&nbsp;&nbsp;Y</button>
             </div>
             <div class="three">
                 <div>
@@ -80,9 +86,10 @@
                 </div>
             </div>
         </div>
-       
+
     </div>
 </body>
 
 <script src="../static/js/sign.js"></script>
+
 </html>
