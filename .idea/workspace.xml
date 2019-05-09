@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd48c168-2093-4393-aaf2-fa1dc58865d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChildY/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChildY/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChildY/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChildY/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/TheOneChild.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/TheOneChild.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/cropper.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/info.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/TheOneChild.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/TheOneChild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/cropper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/sign.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/sign.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/The One Child.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/The One Child.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sign_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sign_up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/y1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/y1/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/y1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/y1/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,22 +39,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/y1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="210" lean-forward="true" selection-start-line="210" selection-end-line="210" />
+            <state relative-caret-position="390">
+              <caret line="194" column="51" selection-start-line="194" selection-start-column="51" selection-end-line="195" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="The One Child.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/The One Child.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TheOneChild.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/TheOneChild.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="510" lean-forward="true" selection-start-line="510" selection-end-line="510" />
               <folding>
-                <element signature="e#0#81#0" expanded="true" />
-                <element signature="e#234#852#0" />
-                <element signature="e#881#2537#0" />
-                <element signature="e#2567#3124#0" />
-                <element signature="e#3150#4095#0" />
-                <element signature="e#4125#4180#0" />
-                <element signature="e#4200#5679#0" />
-                <element signature="e#5346#5659#0" />
-                <element signature="e#5379#5523#0" />
-                <element signature="e#5705#7469#0" />
+                <element signature="e#505#806#0" />
+                <element signature="e#808#835#0" />
+                <element signature="e#2289#2319#0" />
+                <element signature="e#2433#4395#0" />
+                <element signature="e#2686#3539#0" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#63#69#0" expanded="true" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#4421#6576#0" />
+                <element signature="e#4691#5597#0" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#63#69#0" expanded="true" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#6601#7438#0" />
+                <element signature="e#6663#7075#0" />
+                <element signature="e#7081#7436#0" />
+                <element signature="e#7464#8423#0" />
+                <element signature="e#7562#8002#0" />
+                <element signature="e#10547#10596#0" />
+                <element signature="e#11270#11479#0" />
+                <element signature="e#13#19#0" expanded="true" />
+                <element signature="e#19#25#0" expanded="true" />
+                <element signature="e#25#31#0" expanded="true" />
+                <element signature="e#13#19#0" expanded="true" />
+                <element signature="e#19#25#0" expanded="true" />
+                <element signature="e#25#31#0" expanded="true" />
+                <element signature="e#11682#11768#0" />
+                <element signature="e#11826#11912#0" />
+                <element signature="e#12029#14584#0" />
+                <element signature="e#12285#13442#0" />
+                <element signature="e#12656#13391#0" />
+                <element signature="e#12889#12999#0" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#63#69#0" expanded="true" />
+                <element signature="e#13523#14518#0" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#14698#14776#0" />
+                <element signature="e#14830#14908#0" />
+                <element signature="e#15003#16129#0" />
+                <element signature="e#15124#15642#0" />
+                <element signature="e#15744#15811#0" />
+                <element signature="e#15864#15931#0" />
+                <element signature="e#16297#16365#0" />
+                <element signature="e#16420#16488#0" />
+                <element signature="e#16645#16713#0" />
+                <element signature="e#16768#16836#0" />
+                <element signature="e#16997#17065#0" />
+                <element signature="e#17120#17188#0" />
+                <element signature="e#17349#17417#0" />
+                <element signature="e#17472#17540#0" />
+                <element signature="e#19805#20272#0" />
+                <element signature="e#20310#20330#0" />
               </folding>
             </state>
           </provider>
@@ -89,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav</find>
       <find>b-content</find>
       <find>b-one</find>
       <find>more</find>
@@ -108,8 +157,6 @@
       <find>123456465</find>
       <find>backCo</find>
       <find>backColor1</find>
-      <find>button1</find>
-      <find>all</find>
       <find>赞同</find>
       <find>but</find>
       <find>div3</find>
@@ -117,6 +164,11 @@
       <find>like</find>
       <find>print</find>
       <find>console.log</find>
+      <find>收</find>
+      <find>buttonSpan10</find>
+      <find>divButton7</find>
+      <find>all</find>
+      <find>button1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,8 +200,8 @@
         <option value="$PROJECT_DIR$/y1/views.py" />
         <option value="$PROJECT_DIR$/templates/Info.html" />
         <option value="$PROJECT_DIR$/templates/The One Child.html" />
-        <option value="$PROJECT_DIR$/static/js/TheOneChild.js" />
         <option value="$PROJECT_DIR$/static/js/sign.js" />
+        <option value="$PROJECT_DIR$/static/js/TheOneChild.js" />
       </list>
     </option>
   </component>
@@ -179,6 +231,16 @@
             <path>
               <item name="child-y" type="b2602c69:ProjectViewProjectNode" />
               <item name="child-y" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="child-y" type="b2602c69:ProjectViewProjectNode" />
+              <item name="child-y" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="child-y" type="b2602c69:ProjectViewProjectNode" />
+              <item name="child-y" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,7 +328,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994062" weight="0.34204793" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.332244" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11353944" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114605546" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -285,24 +347,24 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14556041" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2973274" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32739422" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +375,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -534,93 +596,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/The One Child.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#show#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/TheOneChild.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="508" lean-forward="true" selection-start-line="508" selection-end-line="508" />
-          <folding>
-            <element signature="e#505#806#0" />
-            <element signature="e#808#835#0" />
-            <element signature="e#1679#1944#0" />
-            <element signature="e#1968#2287#0" />
-            <element signature="e#2289#2319#0" />
-            <element signature="e#2433#4395#0" />
-            <element signature="e#2686#3539#0" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#63#69#0" expanded="true" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#4421#6576#0" />
-            <element signature="e#4691#5597#0" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#63#69#0" expanded="true" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#6601#7438#0" />
-            <element signature="e#6663#7075#0" />
-            <element signature="e#7081#7436#0" />
-            <element signature="e#7464#8423#0" />
-            <element signature="e#7562#8002#0" />
-            <element signature="e#8446#20306#0" />
-            <element signature="e#8459#20303#0" />
-            <element signature="e#8549#20297#0" />
-            <element signature="e#10547#10596#0" />
-            <element signature="e#11270#11479#0" />
-            <element signature="e#13#19#0" expanded="true" />
-            <element signature="e#19#25#0" expanded="true" />
-            <element signature="e#25#31#0" expanded="true" />
-            <element signature="e#13#19#0" expanded="true" />
-            <element signature="e#19#25#0" expanded="true" />
-            <element signature="e#25#31#0" expanded="true" />
-            <element signature="e#11682#11768#0" />
-            <element signature="e#11826#11912#0" />
-            <element signature="e#12029#14584#0" />
-            <element signature="e#12285#13442#0" />
-            <element signature="e#12656#13391#0" />
-            <element signature="e#12889#12999#0" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#63#69#0" expanded="true" />
-            <element signature="e#13523#14518#0" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#14698#14776#0" />
-            <element signature="e#14830#14908#0" />
-            <element signature="e#15003#16129#0" />
-            <element signature="e#15124#15642#0" />
-            <element signature="e#15744#15811#0" />
-            <element signature="e#15864#15931#0" />
-            <element signature="e#16297#16365#0" />
-            <element signature="e#16420#16488#0" />
-            <element signature="e#16645#16713#0" />
-            <element signature="e#16768#16836#0" />
-            <element signature="e#16997#17065#0" />
-            <element signature="e#17120#17188#0" />
-            <element signature="e#17349#17417#0" />
-            <element signature="e#17472#17540#0" />
-            <element signature="e#19341#19754#0" />
-            <element signature="e#19805#20272#0" />
-            <element signature="e#20310#20330#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,11 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!block;n#change#0" />
-            <element signature="n#!!block;n#iClick#0" />
-            <element signature="e#4143#4164#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,11 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="n#!!block;n#rBlur#0" />
-            <element signature="n#!!block;n#rFocus#0" />
-            <element signature="n#!!block;n#rClick#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,19 +651,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/y1/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="210" lean-forward="true" selection-start-line="210" selection-end-line="210" />
+        <state relative-caret-position="390">
+          <caret line="194" column="51" selection-start-line="194" selection-start-column="51" selection-end-line="195" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/The One Child.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/TheOneChild.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="510" lean-forward="true" selection-start-line="510" selection-end-line="510" />
           <folding>
-            <element signature="e#0#81#0" expanded="true" />
-            <element signature="e#234#852#0" />
-            <element signature="e#881#2537#0" />
-            <element signature="e#2567#3124#0" />
-            <element signature="e#3150#4095#0" />
-            <element signature="e#4125#4180#0" />
-            <element signature="e#4200#5679#0" />
-            <element signature="e#5346#5659#0" />
-            <element signature="e#5379#5523#0" />
-            <element signature="e#5705#7469#0" />
+            <element signature="e#505#806#0" />
+            <element signature="e#808#835#0" />
+            <element signature="e#2289#2319#0" />
+            <element signature="e#2433#4395#0" />
+            <element signature="e#2686#3539#0" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#63#69#0" expanded="true" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#4421#6576#0" />
+            <element signature="e#4691#5597#0" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#63#69#0" expanded="true" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#6601#7438#0" />
+            <element signature="e#6663#7075#0" />
+            <element signature="e#7081#7436#0" />
+            <element signature="e#7464#8423#0" />
+            <element signature="e#7562#8002#0" />
+            <element signature="e#10547#10596#0" />
+            <element signature="e#11270#11479#0" />
+            <element signature="e#13#19#0" expanded="true" />
+            <element signature="e#19#25#0" expanded="true" />
+            <element signature="e#25#31#0" expanded="true" />
+            <element signature="e#13#19#0" expanded="true" />
+            <element signature="e#19#25#0" expanded="true" />
+            <element signature="e#25#31#0" expanded="true" />
+            <element signature="e#11682#11768#0" />
+            <element signature="e#11826#11912#0" />
+            <element signature="e#12029#14584#0" />
+            <element signature="e#12285#13442#0" />
+            <element signature="e#12656#13391#0" />
+            <element signature="e#12889#12999#0" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#63#69#0" expanded="true" />
+            <element signature="e#13523#14518#0" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#14698#14776#0" />
+            <element signature="e#14830#14908#0" />
+            <element signature="e#15003#16129#0" />
+            <element signature="e#15124#15642#0" />
+            <element signature="e#15744#15811#0" />
+            <element signature="e#15864#15931#0" />
+            <element signature="e#16297#16365#0" />
+            <element signature="e#16420#16488#0" />
+            <element signature="e#16645#16713#0" />
+            <element signature="e#16768#16836#0" />
+            <element signature="e#16997#17065#0" />
+            <element signature="e#17120#17188#0" />
+            <element signature="e#17349#17417#0" />
+            <element signature="e#17472#17540#0" />
+            <element signature="e#19805#20272#0" />
+            <element signature="e#20310#20330#0" />
           </folding>
         </state>
       </provider>

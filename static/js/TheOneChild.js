@@ -48,12 +48,14 @@ function clickA(obj) {
 // 第二种css样式 + js实现 （隐藏在css中写，显示在js中写） 缺点只能行显示，阅读全文在最后一行与文本偏离太多，不美观，兼容性差
 
 function dataInfo(obj) {
-    var a = obj.parentNode.parentNode.children[2].children[6];
+    console.log(1234564)
+    var a = obj.parentNode.parentNode.children[2].children[7];
     var b = obj.parentNode.children[0];
     b.setAttribute('hidden', 'True');
     obj.parentNode.children[1].removeAttribute('hidden');
     a.style.display = 'block';
     obj.style.display = 'none';
+    console.log(a)
 }
 function dataInto(obj) {
     var a = obj.parentNode.parentNode.children[1].children[0];
@@ -485,7 +487,7 @@ function moreClick() {
 
                 button1.onclick = function () {
                     let obj = this;
-                    var a = obj.parentNode.parentNode.children[2].children[6];
+                    var a = obj.parentNode.parentNode.children[2].children[7];
                     var b = obj.parentNode.children[0];
                     b.setAttribute('hidden', 'True');
                     obj.parentNode.children[1].removeAttribute('hidden');
