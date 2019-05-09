@@ -6,6 +6,10 @@
   > Django 2.0
 * 上传图片需要此模块包
   > pip install Pillow 
+* 开发语言
+  > html, css, javaScript, jquery &nbsp;
+   
+  > python, django
 
 ## 实现功能
 
