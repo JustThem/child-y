@@ -1,15 +1,21 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 # Create your models here.
 
 
 class ChildY(models.Model):
+    # user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=20)
     info = models.TextField()
     like_num = models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.title
+
     class Meta:
         db_table = 'y'
+        verbose_name = '文章'
+        verbose_name_plural = '文章'
 
 
 class ChildUser(models.Model):
